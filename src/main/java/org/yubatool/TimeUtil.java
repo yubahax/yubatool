@@ -1,10 +1,12 @@
 package org.yubatool;
 
+import cn.hutool.core.date.DateUtil;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class TimeUtil {
+public class TimeUtil extends DateUtil {
     public static String getTime() {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
